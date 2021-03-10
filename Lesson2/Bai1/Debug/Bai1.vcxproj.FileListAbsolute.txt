@@ -1,0 +1,2 @@
+C:\Program Code\GameMakingLesson\Lesson2\Bai1\Debug\Bai1.exe
+C:\Program Code\GameMakingLesson\Lesson2\Bai1\Debug\Bai1.pdb
