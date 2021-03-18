@@ -139,8 +139,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Closed.cpp" />
     <ClCompile Include="Door.cpp" />
+    <ClCompile Include="Locked.cpp" />
+    <ClCompile Include="Opened.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="State.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Closed.h" />
+    <ClInclude Include="Door.h" />
+    <ClInclude Include="Locked.h" />
+    <ClInclude Include="Opened.h" />
+    <ClInclude Include="State.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

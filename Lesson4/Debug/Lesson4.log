@@ -1,2 +1,2 @@
-﻿Source.obj : error LNK2005: "public: __thiscall Door::Door(void)" (??0Door@@QAE@XZ) already defined in Door.obj
-C:\Program Code\GameMakingLesson\Lesson4\Debug\Lesson4.exe : fatal error LNK1169: one or more multiply defined symbols found
+﻿  Locked.cpp
+  Lesson4.vcxproj -> C:\Program Code\GameMakingLesson\Lesson4\Debug\Lesson4.exe
