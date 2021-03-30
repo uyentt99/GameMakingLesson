@@ -25,7 +25,7 @@ GSPlay::~GSPlay()
 void GSPlay::Init()
 {
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
-	auto texture = ResourceManagers::GetInstance()->GetTexture("bg_run");
+	auto texture = ResourceManagers::GetInstance()->GetTexture("full-background");
 
 	//BackGround
 	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
@@ -39,8 +39,8 @@ void GSPlay::Init()
 	button->Set2DPosition(20, 20);
 	button->SetSize(42, 34);
 	button->SetOnClick([]() {
-		//GameStateMachine::GetInstance()->PopState();
-		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Menu);
+		GameStateMachine::GetInstance()->PopState();
+		//GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Menu);
 		});
 	m_listButton.push_back(button);
 

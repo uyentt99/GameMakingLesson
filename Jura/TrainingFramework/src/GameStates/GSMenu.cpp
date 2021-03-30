@@ -20,7 +20,7 @@ GSMenu::~GSMenu()
 void GSMenu::Init()
 {
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
-	auto texture = ResourceManagers::GetInstance()->GetTexture("bg_jungle2");
+	auto texture = ResourceManagers::GetInstance()->GetTexture("full-background");
 
 	//BackGround
 	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
@@ -74,9 +74,6 @@ void GSMenu::Init()
 	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("Algerian Regular");
 	m_Text_gameName = std::make_shared< Text>(shader, font, "JURA RUN", TEXT_COLOR::RED, 2.0);
 	m_Text_gameName->Set2DPosition(Vector2(screenWidth / 2 - 110, 120));
-
-
-	
 }
 
 void GSMenu::Exit()
@@ -91,8 +88,6 @@ void GSMenu::Pause()
 
 void GSMenu::Resume()
 {
-	cout << "Back menu Screen";
-	Draw();
 
 }
 
