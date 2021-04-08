@@ -16,6 +16,9 @@
     <Filter Include="Source\src\GameStates">
       <UniqueIdentifier>{2a875364-1a2b-4ea6-a6fe-716988208916}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\src\CharacterManager">
+      <UniqueIdentifier>{89dec70b-3bae-412b-b359-7ec02a891cd3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Application.cpp">
@@ -69,11 +72,35 @@
     <ClCompile Include="src\JuraApp.cpp">
       <Filter>Source\src</Filter>
     </ClCompile>
-    <ClCompile Include="src\GameStates\GSCredit.cpp">
-      <Filter>Source\src\GameStates</Filter>
-    </ClCompile>
     <ClCompile Include="src\GameStates\GSSetting.cpp">
       <Filter>Source\src\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObject\Animation2D.cpp">
+      <Filter>Source\src\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharacterManager\State.cpp">
+      <Filter>Source\src\CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameStates\GSHelp.cpp">
+      <Filter>Source\src\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharacterManager\Character.cpp">
+      <Filter>Source\src\CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharacterManager\Sliding.cpp">
+      <Filter>Source\src\CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharacterManager\Dead.cpp">
+      <Filter>Source\src\CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharacterManager\Running.cpp">
+      <Filter>Source\src\CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharacterManager\Idle.cpp">
+      <Filter>Source\src\CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharacterManager\Jumping.cpp">
+      <Filter>Source\src\CharacterManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -134,11 +161,35 @@
     <ClInclude Include="src\GameObject\GameButton.h">
       <Filter>Source\src\GameObject</Filter>
     </ClInclude>
-    <ClInclude Include="src\GameStates\GSCredit.h">
-      <Filter>Source\src\GameStates</Filter>
-    </ClInclude>
     <ClInclude Include="src\GameStates\GSSetting.h">
       <Filter>Source\src\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObject\Animation2D.h">
+      <Filter>Source\src\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharacterManager\State.h">
+      <Filter>Source\src\CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameStates\GSHelp.h">
+      <Filter>Source\src\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharacterManager\Character.h">
+      <Filter>Source\src\CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharacterManager\Sliding.h">
+      <Filter>Source\src\CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharacterManager\Dead.h">
+      <Filter>Source\src\CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharacterManager\Running.h">
+      <Filter>Source\src\CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharacterManager\Idle.h">
+      <Filter>Source\src\CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharacterManager\Jumping.h">
+      <Filter>Source\src\CharacterManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

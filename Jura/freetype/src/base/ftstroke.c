@@ -904,7 +904,7 @@
   }
 
 
-  /* add a cap at the end of an opened path */
+  /* add a cap at the end of an Running path */
   static FT_Error
   ft_stroker_cap( FT_Stroker  stroker,
                   FT_Angle    angle,
@@ -1894,7 +1894,7 @@
       FT_StrokeBorder  right = stroker->borders;
 
 
-      /* All right, this is an opened path, we need to add a cap between */
+      /* All right, this is an Running path, we need to add a cap between */
       /* right & left, add the reverse of left, then add a final cap     */
       /* between left & right.                                           */
       error = ft_stroker_cap( stroker, stroker->angle_in, 0 );
@@ -2081,12 +2081,12 @@
 
   /*
    *  The following is very similar to FT_Outline_Decompose, except
-   *  that we do support opened paths, and do not scale the outline.
+   *  that we do support Running paths, and do not scale the outline.
    */
   FT_EXPORT_DEF( FT_Error )
   FT_Stroker_ParseOutline( FT_Stroker   stroker,
                            FT_Outline*  outline,
-                           FT_Bool      opened )
+                           FT_Bool      Running )
   {
     FT_Vector   v_last;
     FT_Vector   v_control;
@@ -2162,7 +2162,7 @@
         tags--;
       }
 
-      error = FT_Stroker_BeginSubPath( stroker, &v_start, opened );
+      error = FT_Stroker_BeginSubPath( stroker, &v_start, Running );
       if ( error )
         goto Exit;
 

@@ -104,3 +104,13 @@
 #define KEY_MOVE_BACKWORD		83	// key s
 
 #endif
+
+
+#define BUTTON_EXIT "BUTTON_EXIT"
+#define BUTTON_PLAY "BUTTON_PLAY"
+#define BUTTON_BACK "BUTTON_BACK"
+#define BUTTON_HELP "BUTTON_HELP"
+#define BUTTON_SETTING "BUTTON_SETTING"
+
+
+std::string getBackGround(int stt);

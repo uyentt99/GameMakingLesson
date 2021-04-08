@@ -3,8 +3,8 @@
 #include "Application.h"
 #include "utilities.h" 
 
-GLint screenWidth = 900;
-GLint screenHeight = 500;
+GLint screenWidth = 960;
+GLint screenHeight = 540;
 
 GLint Init(ESContext* esContext)
 {
@@ -58,7 +58,7 @@ GLint _tmain(GLint argc, _TCHAR* argv[])
 	CleanUp();
 
 	//identifying memory leaks
-	MemoryDump();
+	//MemoryDump();
 	//printf("Press any key...\n");
 	//_getch();
 

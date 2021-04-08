@@ -8,8 +8,11 @@
 #include "GameObject/Font.h"
 #include "GameObject/Camera.h"
 #include "GameObject/Sprite2D.h"
+#include "GameObject/Animation2D.h"
 #include "GameObject/Sprite3D.h"
 #include "GameObject/Text.h"
+#include "CharacterManager/Character.h"
+#include <fstream>
 
 class ResourceManagers : public CSingleton<ResourceManagers>
 {
@@ -30,6 +33,9 @@ public:
 	std::shared_ptr<Texture> GetTexture(const std::string& name);
 	std::shared_ptr<Models> GetModel(const std::string& name);
 	std::shared_ptr<Font> GetFont(const std::string& name);
+	std::string  getBackGround();
+	std::string getHighScore();
+
 private:
 	std::map<std::string, std::shared_ptr<Shaders>> m_MapShader;
 	std::map<std::string, std::shared_ptr<Texture>> m_MapTexture;
@@ -40,5 +46,8 @@ private:
 	std::string m_TexturePath;
 	std::string m_ModelsPath;
 	std::string m_FontPath;
-
+	int m_bgSetting;
+	int m_bgMusicSetting;
+	int m_soundSetting;
+	int m_highScore;
 };

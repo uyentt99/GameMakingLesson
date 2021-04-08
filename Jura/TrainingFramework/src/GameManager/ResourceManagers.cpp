@@ -16,6 +16,13 @@ ResourceManagers::ResourceManagers()
 	m_TexturePath = dataPath + "Textures\\";
 	m_ModelsPath = dataPath + "Model\\";
 	m_FontPath = dataPath + "fonts\\";
+
+	std::ifstream input("..\\Data\\Config.txt");
+	input >> m_bgSetting;
+	input >> m_bgMusicSetting;
+	input >> m_soundSetting;
+	input >> m_highScore;
+	input.close();
 }
 
 ResourceManagers::~ResourceManagers()
@@ -157,4 +164,22 @@ std::shared_ptr<Font> ResourceManagers::GetFont(const std::string& name)
 	std::shared_ptr<Font> font = std::make_shared<Font>(path);
 	m_MapFont.insert(std::pair<std::string, std::shared_ptr<Font>>(name, font));
 	return font;
+}
+
+
+std::string ResourceManagers::getBackGround() {
+	switch (m_bgSetting)
+	{
+		case 1:
+			return "bg1";
+		case 2:
+			return "bg2";
+		case 3:
+			return "bg3";
+		default:
+			return "bg3";
+	}
+}
+std::string ResourceManagers::getHighScore(){
+	return std::to_string(m_highScore);
 }

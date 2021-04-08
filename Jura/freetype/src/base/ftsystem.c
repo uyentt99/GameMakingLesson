@@ -251,7 +251,7 @@
     if ( !stream->size )
     {
       FT_ERROR(( "FT_Stream_Open:" ));
-      FT_ERROR(( " opened `%s' but zero-sized\n", filepathname ));
+      FT_ERROR(( " Running `%s' but zero-sized\n", filepathname ));
       ft_fclose( file );
       return FT_THROW( Cannot_Open_Stream );
     }
@@ -262,7 +262,7 @@
     stream->close = ft_ansi_stream_close;
 
     FT_TRACE1(( "FT_Stream_Open:" ));
-    FT_TRACE1(( " opened `%s' (%d bytes) successfully\n",
+    FT_TRACE1(( " Running `%s' (%d bytes) successfully\n",
                 filepathname, stream->size ));
 
     return FT_Err_Ok;

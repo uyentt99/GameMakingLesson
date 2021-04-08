@@ -24,15 +24,18 @@ public:
 	void HandleTouchEvents(int x, int y, bool bIsPressed);
 	void Update(float deltaTime);
 	void Draw();
-
+	void UpdateBackGround(float deltaTime);
 	
 	void SetNewPostionForBullet();
 
 private:
-
-	std::shared_ptr<Sprite2D> m_BackGround;
+	float positinBG = 0;
+	int keyPressed;
+	std::shared_ptr<Sprite2D> m_BackGround1;
+	std::shared_ptr<Sprite2D> m_BackGround2;
+	std::shared_ptr<Character> m_character;
 	std::list<std::shared_ptr<GameButton>>	m_listButton;
-	std::shared_ptr<Text>  m_score;
+	std::list<std::shared_ptr<Text>>  m_listText;
 
 };
 

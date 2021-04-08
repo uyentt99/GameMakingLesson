@@ -7,8 +7,6 @@
 extern GLint screenWidth;
 extern GLint screenHeight;
 
-
-
 void Sprite2D::CaculateWorldMatrix()
 {
 	Matrix m_Sc, m_T;
